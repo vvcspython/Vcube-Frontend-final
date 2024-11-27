@@ -9,7 +9,7 @@ import { useAuth } from '../api/AuthContext';
 import { UsersAuthContext } from '../api/UsersAuth';
 import { UserGoogleContext } from '../api/Google';
 import { CourseContext } from '../api/Course';
-//Add user file
+
 
 const AddNewUser = ({ handleShowSnackbar, setIsLoading, setTabValue }) => {
     const { newUserCreate, checkUser, checkPassword, checkUserDetails } = useContext(LoginContext);
