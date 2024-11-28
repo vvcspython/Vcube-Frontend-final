@@ -25,6 +25,7 @@ export const UserGoogleProvider = ({ children }) => {
             return { status: 'failed', message: 'Email Verification Failed' };
         }
     } catch (error) {
+      
         userGoogleLogout();
         return { status: 'failed', message: 'Login failed' };
     }
@@ -57,6 +58,7 @@ export const UserGoogleProvider = ({ children }) => {
             return { status: 'failed', message: 'Email does not match' };
         }
     } catch(error){
+        //console.log(error)
         stdGoogleLogout();
         return { status: 'failed', message: 'Login failed' };
     }
